@@ -3,9 +3,9 @@ import { type Metadata } from 'next'
 import { Projects } from '~/app/(main)/projects/Projects'
 import { Container } from '~/components/ui/Container'
 
-const title = '我的项目'
+const title = '我的个人'
 const description =
-  '多年来，我一直在做各种各样的小项目，这里就是我筛选出来我觉得还不错的项目合集，也是我在技术领域中尝试和探索的最好见证。'
+  '这里是我的个人空间，展示我在技术、设计与创作上的尝试。它既是我的成果合集，也是我对未来兴趣和思考的记录。'
 export const metadata = {
   title,
   description,
@@ -25,12 +25,10 @@ export default function ProjectsPage() {
     <Container className="mt-16 sm:mt-32">
       <header className="max-w-2xl">
         <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-          我过去的项目冒险之旅。
+          我的个人空间。
         </h1>
         <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-          多年来，我一直在做各种各样的小项目，有<b>开源</b>的，有<b>实验</b>
-          的，也有 <b>just for fun </b>
-          的，下面就是我筛选出来我觉得还不错的项目合集，也是我在技术领域中尝试和探索的最好见证。
+          这里展示我的个人探索、创作尝试与兴趣实践。既包含技术作品，也记录我想做的事情和思考过程。
         </p>
       </header>
       <div className="mt-16 sm:mt-20">

@@ -2,7 +2,14 @@ import { ProjectCard } from '~/app/(main)/projects/ProjectCard'
 import { getSettings } from '~/sanity/queries'
 
 export async function Projects() {
-  const projects = (await getSettings())?.projects || []
+  let projects = []
+
+  try {
+    projects = (await getSettings())?.projects || []
+  } catch (error) {
+    console.error('Failed to load Sanity projects:', error)
+    projects = []
+  }
 
   return (
     <ul

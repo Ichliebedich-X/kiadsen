@@ -3,14 +3,20 @@ import React from 'react'
 import { BlogPosts } from '~/app/(main)/blog/BlogPosts'
 import { Headline } from '~/app/(main)/Headline'
 import { Newsletter } from '~/app/(main)/Newsletter'
-import { Photos } from '~/app/(main)/Photos'
 import { Resume } from '~/app/(main)/Resume'
 import { PencilSwooshIcon } from '~/assets'
 import { Container } from '~/components/ui/Container'
 import { getSettings } from '~/sanity/queries'
 
 export default async function BlogHomePage() {
-  const settings = await getSettings()
+  let settings
+
+  try {
+    settings = await getSettings()
+  } catch (error) {
+    console.error('Failed to load Sanity settings:', error)
+    settings = undefined
+  }
 
   return (
     <>
@@ -18,7 +24,9 @@ export default async function BlogHomePage() {
         <Headline />
       </Container>
 
+      {/**
       {settings?.heroPhotos && <Photos photos={settings.heroPhotos} />}
+      **/}
 
       <Container className="mt-24 md:mt-28">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
