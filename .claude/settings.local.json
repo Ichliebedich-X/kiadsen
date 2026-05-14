@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pnpm build *)",
+      "Bash(rm -rf \"d:/AiStdio/GitHub/cali.so/app/studio/[[...tool]]\")",
+      "Bash(pnpm dev *)"
+    ],
+    "additionalDirectories": [
+      "d:\\AiStdio\\GitHub\\cali.so\\app\\studio\\[[...tool]]"
+    ]
+  }
+}
