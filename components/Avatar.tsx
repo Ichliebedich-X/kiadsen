@@ -25,7 +25,7 @@ function AvatarImage({
   large = false,
   className,
   href,
-  alt,
+  alt: _alt,
   ...props
 }: AvatarImageProps) {
   return (

@@ -15,7 +15,7 @@ export async function BlogPosts({ limit = 5 }) {
     posts = []
   }
 
-  const postIdKeys = posts.map(({ _id }) => kvKeys.postViews(_id))
+  const postIdKeys = posts.map(({ _id }: { _id: string }) => kvKeys.postViews(_id))
 
   let views: number[] = []
   if (env.VERCEL_ENV === 'development') {
