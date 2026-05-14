@@ -39,46 +39,39 @@ export default function Layout({
                 src={`${emailConfig.baseUrl}/kiadsen.jpg`}
                 width="24"
                 height="24"
-                alt="Cali"
+                alt="Kiadsen"
                 className="mx-auto my-0"
               />
               <Text className="text-center">
                 <Link
-                  href="https://cali.so"
+                  href={emailConfig.baseUrl}
                   className="text-zinc-700 underline"
                 >
-                  <strong>Cali Castle</strong>
+                  <strong>Kiadsen</strong>
                 </Link>
                 <br />
-                开发者、设计师、细节控、创始人
+                大二在读学生，爱折腾第一名，deepsleeper
               </Text>
               <Text className="text-center">
                 <Link
-                  href="https://cali.so/twitter"
-                  className="text-xs text-zinc-600 underline"
-                >
-                  Twitter
-                </Link>{' '}
-                |&nbsp;
-                <Link
-                  href="https://cali.so/youtube"
-                  className="text-xs text-zinc-600 underline"
-                >
-                  YouTube
-                </Link>{' '}
-                |&nbsp;
-                <Link
-                  href="https://cali.so/github"
+                  href="https://github.com/Ichliebedich-X"
                   className="text-xs text-zinc-600 underline"
                 >
                   GitHub
                 </Link>{' '}
                 |&nbsp;
                 <Link
-                  href="https://cali.so/bilibili"
+                  href="https://space.bilibili.com/181129335"
                   className="text-xs text-zinc-600 underline"
                 >
                   哔哩哔哩
+                </Link>{' '}
+                |&nbsp;
+                <Link
+                  href="mailto:kiadsen423@gmail.com"
+                  className="text-xs text-zinc-600 underline"
+                >
+                  邮箱
                 </Link>
               </Text>
             </Section>

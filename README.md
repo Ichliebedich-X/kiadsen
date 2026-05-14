@@ -3,8 +3,7 @@
 感谢 Cali 老师的开源贡献和指导，详细教程可以查看 Cali 的[官方教程](https://cali.so/blog/guide-for-cloning-my-site)
 
 需要其他服务商的环境变量才能正常运行，所以如果你想要在本地运行，需要自己配置。
-
-可查看 `.env.example` 文件，里面包含了所有需要的环境变量。
+可查看 .env.example 文件，里面包含了所有需要的环境变量。
 
 ### 技术栈
 
@@ -20,7 +19,6 @@
 - [Sanity](https://www.sanity.io/)
 - [React Email](https://react.email)
 - [Resend](https://resend.com/)
-
 
 ### 本地开发
 

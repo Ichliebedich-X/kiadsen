@@ -3,7 +3,10 @@
     "allow": [
       "Bash(pnpm build *)",
       "Bash(rm -rf \"d:/AiStdio/GitHub/cali.so/app/studio/[[...tool]]\")",
-      "Bash(pnpm dev *)"
+      "Bash(pnpm dev *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)",
+      "Bash(git add *)"
     ],
     "additionalDirectories": [
       "d:\\AiStdio\\GitHub\\cali.so\\app\\studio\\[[...tool]]"
